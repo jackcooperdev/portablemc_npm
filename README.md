@@ -1,6 +1,8 @@
 # PortableMC_NPM
 
-This module aims to convert the excellent work by [mindstorm38](https://github.com/mindstorm38) into an NPM module in order to be used in many NodeJS based projects. 
+This module aims
+to convert the excellent work by [mindstorm38](https://github.com/mindstorm38) into an NPM module
+to be used in many Node.js based projects. 
 
 ## Compatability
 The package is compatible with Windows and Linux Clients
@@ -21,7 +23,8 @@ This function tells the package some key pieces of information:
 **LOG_LOCATION** : Path to logs location<br>
 **MAIN_DIR** : Path where minecraft will be installed<br>
 
-All values have defaults however the package will error if portablemc is not found. In this case manual declaration may be needed.
+All values have defaults; however, the package will error if portablemc is not found.
+In this case, manual declaration may be needed.
 
 ``` js
 portablemc.config({
@@ -43,10 +46,10 @@ const authenticatedUser = await portablemc.authenticate(EMAIL);
 {
   "username": "USERNAME",
   "uuid": "UUID",
-  "email": "EMAIL (Obsfucated)"
+  "email": "EMAIL (Obfuscated)"
 }
 ```
-Once this function is run it stores the user and will use it to launch later sessions.
+Once this function is run, it stores the user and will use it to launch later sessions.
 
 ### .launchGame(options,installOnly)
 This functions boots an instance of minecraft with the following conditions:
@@ -67,12 +70,12 @@ This functions boots an instance of minecraft with the following conditions:
 - Quilt
 - LegacyFabric
 
-> Currently there is no check to ensure that the version selected supports the loader. This will be addressed in a future version.
+> Currently, there is no check to ensure that the version selected supports the loader. This will be addressed in a future version.
 
 ## installOnly
 Setting this to true will stop the launch of the game and only install it.
 
-This function can be called normaly and asynchronously
+This function can be called normally and asynchronously
 ``` js
 portablemc.launchGame(options,false);
 ```
@@ -99,7 +102,7 @@ Returns an array of authenticated users
 const logoutUser = await portablemc.logout(email)
 ```
 
-Logs the user out
+Log the user out
 
 
 

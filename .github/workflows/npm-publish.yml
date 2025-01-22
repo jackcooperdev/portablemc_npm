@@ -9,7 +9,6 @@ on:
 
 jobs:
   build:
-    if: ${{ false }}
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -19,7 +18,6 @@ jobs:
       - run: npm ci
 
   publish-npm:
-    if: ${{ false }}
     needs: build
     runs-on: ubuntu-latest
     steps:

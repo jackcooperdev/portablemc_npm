@@ -1,6 +1,6 @@
 {
-  "name": "@jackcooper04/portablemc_npm",
-  "version": "1.25.0",
+  "name": "@jackcooperdev/portablemc_npm",
+  "version": "1.26.0",
   "description": "",
   "main": "index.js",
   "os": [
@@ -9,13 +9,12 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/jackcooper04/portablemc_npm.git"
+    "url": "git+https://github.com/jackcooperdev/portablemc_npm.git"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "installDependencies": "installDependencies.bat"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
-  "license": "ISC",
+  "license": "MIT",
   "dependencies": {}
 }
